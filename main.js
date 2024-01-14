@@ -22,4 +22,6 @@ if (bandas.includes(tuBanda)) {
     }
 
     console.log(bandas);    
+}else{
+    alert("Tu estilo favorito, no es el metal, gracias por visitarnos")
 }

@@ -1,3 +1,15 @@
 body {
-    background-color: rgb(183, 242, 223);
+    background-color: rgb(60, 60, 60);
+}
+
+h1 {
+    font-size: 50px;
+    transition: .5 linear;
+}
+
+h1:hover {
+    color: white;
+    text-shadow: 0 0 10px  white,
+    0 0 20px white,
+    0 0 40px white;
 }
