@@ -4,8 +4,14 @@ const bandas = ['Black Sabbath', 'Led Zepellin', 'Deep Purple', 'Judas Priest', 
     'Stratovarius', 'Dragon Force', 'Symphony X', 'Helloween', 'Dark Tranquility'];
 
 
-let nombre = prompt("¿Cuál es tu nombre?");
-let tuBanda = prompt("Ingresa tu banda");
+let tuEstilo = prompt("Cual es tu estilo de musica favorito")
+let nombre, tuBanda; 
+
+
+if (tuEstilo === 'metal') {
+    nombre = prompt("Cual es tu nombre?")
+    tuBanda =prompt("Cual es tu banda de metal favorita?")
+
 
 if (bandas.includes(tuBanda)) {
         console.log("¡Bienvenido hermano metalero , " + nombre + " ! Tu banda es de las grandes del metal.");
@@ -14,3 +20,6 @@ if (bandas.includes(tuBanda)) {
         bandas.push(tuBanda);
         console.log("¡Bienvenido hermano metalero , " + nombre + "! Tu banda favorita ha sido agregada a nuestra lista metalera.");
     }
+
+    console.log(bandas);    
+}
